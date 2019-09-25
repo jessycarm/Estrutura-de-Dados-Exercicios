@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int func(int n){
+  if(n==0)
+  return 0;
+  return (n+func(n-1));
+}
+
+int main(void) { 
+  //casos de teste
+  printf("%d\n", func(0));
+  printf("%d\n", func(1));
+  printf("%d\n", func(2));
+  printf("%d\n", func(3));
+  return 0;
+}
+
+//se n=0, ela retorna 0;
+//se n!0, ela soma o valor de n e subtrai a função de n por 1;
