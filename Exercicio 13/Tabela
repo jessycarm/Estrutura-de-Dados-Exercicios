@@ -1,0 +1,102 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void linha() {
+    int i;
+    for (i = 0; i <= 80; i++) {
+        printf("%s", "_");
+    }
+    printf("\n");
+}
+
+void tabela() {
+    printf("%s\t\t", "Produto|");
+    printf("%s\t\t", "Preço Unitário|");
+    printf("%s\t\t", "Quantidade|");
+    printf("%s\n", "Preço Tota|");
+}
+
+void produto1(int qt_b) {
+
+
+    float Banana = 2.50, p_banana = 5.00;
+    printf("%s\t\t\t", "Banana|");
+    printf("%s", "R$");
+    printf("%11.2f|\t\t\t", Banana);
+    printf("%d|\t\t", qt_b);
+    printf("%s", "R$");
+    printf("%7.2f|\n", p_banana);
+}
+
+void produto2(int qt_u) {
+    float Uva = 6.50, p_uva = 39.00;
+    printf("%s\t\t\t", "Uva|");
+    printf("%s", "R$");
+    printf("%11.2f|\t\t\t", Uva);
+    printf("%d|\t\t", qt_u);
+    printf("%s", "R$");
+    printf("%7.2f|\n", p_uva);
+}
+
+void produto3(int qt_p) {
+    
+    float Pessego = 10.22, p_pessego = 102.20;
+    printf("%s\t\t", "Pessego|");
+    printf("%s", "R$");
+    printf("%11.2f|\t\t\t", Pessego);
+    printf("%d|\t\t", qt_p);
+    printf("%s", "R$");
+    printf("%7.2f|\n", p_pessego);
+}
+
+void sub_total() {
+    float v_s_total = 146.20;
+    printf("\t|");
+    printf("\t\t\t|");
+    printf("\t\t%s", "Sub-Total|");
+    printf("\t\t%s", "R$");
+    printf("%7.2f|\n", v_s_total);
+}
+
+void imposto() {
+    int imposto = 5;
+    float v_imposto = 7.31;
+    printf("\t|");
+    printf("\t\t%s""(%d%%)\t\t\t|", "Imposto", imposto);
+    printf("\t\t%s", "R$");
+    printf("%7.2f|\n", v_imposto);
+}
+
+void total() {
+    float total = 153.51;
+
+    printf("\t|");
+    printf("\t\t\t|");
+    printf("\t\t%s", "Total|");
+    printf("\t\t\t%s", "R$");
+    printf("%7.2f|\n", total);
+
+}
+
+int main(void) {
+
+
+
+    tabela();
+    linha();
+    produto1(2);
+    linha();
+    produto2(6);
+    linha();
+    produto3(10);
+    linha();
+    sub_total();
+    linha();
+    imposto();
+    linha();
+    total();
+
+}
+
