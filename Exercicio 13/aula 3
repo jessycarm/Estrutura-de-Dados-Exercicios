@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+/*
+//primeiro código corrigido
+int main(void) {
+  int a=1, b=2, c=3;
+   //corrigido a posição do ponto e virgula
+  printf("Os números são:\n %d %d %d\n", a, b, c);
+  //corrigido a quantidade de argumentos e fechado a "aspas".
+  return 0;
+}*/
+
+
+/*
+//saida do progrma
+int main(void){
+  printf("%s\n%s\n%s", "um", "dois", "três");
+  //imprime três palavras do tipo string.
+}*/
+
+
+
